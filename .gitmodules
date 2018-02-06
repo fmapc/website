@@ -1,4 +1,0 @@
-[submodule "public"]
-	path = public
-	url = git@github.com:fmapc/fmapc.github.io.git
-	branch = master
