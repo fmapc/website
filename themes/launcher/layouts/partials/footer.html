@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <p class="contact">
+    {{ range .Site.Params.social }}
+      <a href="{{ .link }}"><i title="{{ .title }}" class="{{ .icon }}" target="{{ .target | default "_self" }}"></i></a>
+    {{ end }}
+  </p>
+  <p class="copyright">
+    &copy; {{ .Site.Params.footer.copyrightDate}} {{ .Site.Params.footer.copyright }}.
+  </p>
+  {{ if eq .Site.Params.footer.creditHugo true }}
+  <p class="credits">
+    Powered with <i class="fas fa-heart"></i> by <a href="https://gohugo.io">Hugo</a>
+  </p>
+  {{ end }}
+</footer>

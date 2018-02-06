@@ -1,3 +1,74 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+# Site settings
+baseurl = "http://fmap.tech" #without ending slash
+languageCode = "en-gb"
+title = "fmap consulting"
+theme = "launcher"
+
+# Disable unnecessary kinds
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
+[params]
+  title = "fmap consulting"
+  company = "fmap"
+  caption = "London-crafted software."
+
+  # Site icons
+  favicon_ico = "favicon.ico"
+  favicon_ico_sizes = "16x16 32x32"
+  appleicon = "apple.png"
+
+  # Tech loves
+  [[params.tech]]
+    key = "node"
+    title = "Node.js"
+    icon = "icon-nodejs"
+    link = "https://nodejs.org/"
+
+  [[params.tech]]
+    key = "docker"
+    title = "Docker"
+    icon = "icon-docker"
+    link = "https://www.docker.com/"
+
+  [[params.tech]]
+    key = "aws"
+    title = "AWS"
+    icon = "icon-aws"
+    link = "https://aws.amazon.com/"
+
+  [[params.tech]]
+    key = "clojure"
+    title = "Clojure"
+    icon = "icon-clojure"
+    link = "https://www.clojure.org/"
+
+  [[params.tech]]
+    key = "react"
+    title = "React"
+    icon = "icon-reactjs"
+    link = "https://reactjs.org/"
+
+  [[params.tech]]
+    key = "elixir"
+    title = "Elixir"
+    icon = "icon-elixir"
+    link = "https://elixir-lang.org/"
+
+  # Social links
+  [[params.social]]
+    title = "Twitter"
+    icon = "fab fa-twitter-square"
+    link = "https://twitter.com/tabazevedo"
+    target = "_blank"
+
+  [[params.social]]
+    title = "Mail"
+    icon = "fas fa-envelope"
+    link = "mailto:hello@fmap.tech"
+    target = "_blank"
+
+  # Footer settings
+  [params.footer]
+    copyright = "fmap consulting ltd"
+    copyrightDate = "2018"
+    creditHugo = true

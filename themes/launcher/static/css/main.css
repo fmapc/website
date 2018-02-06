@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400|Work+Sans:100,400');
+
+html {
+  background: url(/images/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  color: white;
+  text-align: center;
+  min-height: 50vh;
+  margin-top: 25vh;
+}
+
+.main-company {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 6em;
+  line-height: 1.1em;
+}
+
+.main-caption {
+  font-size: 3em;
+  font-weight: 100;
+  line-height: 1.1em;
+  margin-bottom: 50px;
+}
+
+.main-tech {
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 25px;
+}
+
+.main-tech-title {
+  margin-bottom: 12.5px;
+}
+
+.main-tech li {
+  display: inline-block;
+  width: 40px;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+.site-footer p {
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+}
+
+.site-footer p.contact {
+  font-size: 1.5em;
+  margin-bottom: 12.5px;
+}
+
+.site-footer p.copyright {
+  font-size: .9em;
+}
+
+.site-footer p.credits {
+  font-size: .7em;
+}
+
+.icon-node-li {
+  margin-right: -5px;
+}
+
+.icon-nodejs:hover {
+  color: #6ebf74;
+}
+
+.icon-docker:hover {
+  color: #319ae0;
+}
+
+.icon-aws:hover {
+  color: #ff9d0a;
+}
+
+.icon-clojure:hover {
+  color: #38ffa5;
+}
+
+.icon-reactjs:hover {
+  color: #61dafb;
+}
+
+.icon-elixir:hover {
+  color: #a391ff;
+}

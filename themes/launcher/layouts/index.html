@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "header.html" . }}
+  <body>
+    <section class="main">
+      <h1 class="main-company">{{ .Site.Params.company }}</h1>
+      <p class="main-caption">{{ .Site.Params.caption | markdownify }}</p>
+      <div class="main-tech">
+        <p class="main-tech-title">tech we love</p>
+        <ul>
+          {{ range .Site.Params.tech }}
+            <li class="icon-{{ .key }}-li">
+              <a href="{{ .link }}"><i title="{{ .title }}" class="{{ .icon }}" target="{{ .target | default "_self" }}"></i></a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+    {{ partial "footer.html" . }}
+  </body>
+</html>
